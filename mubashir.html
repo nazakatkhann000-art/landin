@@ -1,0 +1,249 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title> Page Assignment</title>
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+  
+    header {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      box-shadow: 0 2px 10px black
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      font-weight: 500;
+      color: #555;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #3498db;
+    }
+
+    .hero {
+      background-color: #3498db;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+   
+    }
+
+    .btn-primary {
+      background-color: #e74c3c;
+      color: #ffffff;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #c0392b;
+    }
+    .about {
+      padding:  8%;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 0 auto;
+      color: #666666;
+      font-size: 17px;
+    }
+
+
+    .services {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+   .services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.services-grid {
+    text-align: center;
+}
+
+.services-grid > div {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    vertical-align: top;
+}
+    .card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
+      max-width: 350px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #3498db;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+  
+    .cta {
+      background-color: #2c3e50;
+      color: #ffffff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      margin-bottom: 25px;
+      font-size: 16px;
+
+    }
+
+   
+    footer {
+      background-color: #1a252f;
+      color: #aaaaaa;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">MyBrand</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Build Your Digital Future</h1>
+    <p>We create modern, responsive, and clean web layouts designed to help your ideas stand out.</p>
+    <a href="#services" class="btn-primary">Get Started</a>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Welcome to our landing page platform! We are dedicated to providing clean, beginner-friendly web solutions built with pure HTML and CSS structure and design principles.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Clean, elegant, and responsive user interfaces structured for modern browsers.</p>
+      </div>
+      <div class="card">
+        <h3>Development</h3>
+        <p>Lightweight, structured HTML5 and CSS3 code written to web standards.</p>
+      </div>
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Consistent visual branding themes, font selections, and color palettes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Ready to Start Your Project?</h2>
+    <p>Join us today and bring your front-end web design skills to the next level.</p>
+    <a href="#" class="btn-primary">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MyBrand. All Rights Reserved. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
